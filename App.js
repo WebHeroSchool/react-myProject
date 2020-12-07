@@ -1,8 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
-const number = 5;
-const areYouReady = true;
+import { count, length } from './number';
 
 function App() {
   return (
@@ -12,24 +10,8 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <p style={{
-          color: 'blue',
-          fontSize: 14 + 40,
-          lineHeight: .3
-        }}>
-          Hello anybody!
-        </p>
         <p>
-          {'Your number = ' + number}
-        </p>
-        <p>
-          {areYouReady && "I'm ready!"}
-          {undefined}
-          {null}
-          {false}
-        </p>
-        <p>
-          {(number <= 5) ? "The number is fine" : "I'll choose another number"}
+          { count + ' * ' + length + ' = ' + count * length}
         </p>
         <a
           className="App-link"
